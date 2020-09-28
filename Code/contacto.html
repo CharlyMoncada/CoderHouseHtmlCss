@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Prent Lenceria | Contacto</title>
+    <meta
+      name="description"
+      content="Contacto Page de Prent Lenceria con todas las formas de contacto"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="catalogo.html">Catalogo</a>
+        </li>
+        <li>
+          <a href="novedades.html">Novedades</a>
+        </li>
+        <li>
+          <a href="envios.html">Envio</a>
+        </li>
+        <li>
+          <a class="active" href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required />
+        </div>
+
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" required />
+        </div>
+
+        <div>
+          <label for="telefono">Telefono</label>
+          <input type="number" name="telefono" id="telefono" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="nombre"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="radio" name="sexo" id="masculino" value="masculino" />
+          <label for="masculino">Masculino</label>
+          <input
+            type="radio"
+            name="sexo"
+            id="femenino"
+            value="femenino"
+            checked
+          />
+          <label for="femenino">Femenino</label>
+        </div>
+
+        <div>
+          <label>Tipo de Consulta</label>
+          <select name="consulta">
+            <option value="mi">Minorista</option>
+            <option value="ma">Mayorista</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Mensaje</label>
+        </div>
+        <div>
+          <textarea name="mensaje" cols="20" rows="10"></textarea>
+        </div>
+        <input type="reset" value="Limpiar Formulario" />
+        <input type="submit" value="Enviar Formulario" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list footer__item--instagram">Instagram</li>
+        <li class="footer__list footer__item--facebook">Facebook</li>
+        <li class="footer__list footer__item--email">Email</li>
+      </ul>
+    </footer>
+  </body>
+</html>

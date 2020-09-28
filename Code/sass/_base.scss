@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  margin: 10px;
+  padding: 2px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25vh 5vh 1fr 5vh;
+}
+
+section {
+  grid-area: 3 / 1 / 4 / 4;
+}
+
