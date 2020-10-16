@@ -1,0 +1,54 @@
+// .index {
+//   grid-area: 3 / 1 / 4 / 2;
+//   display: flex;
+//   padding: 30px;
+//   margin: 20px;
+//   flex-direction: row;
+//   width: 100%;
+
+//   .indexImage {
+//     display: flex;
+//     align-content: center;
+//   }
+// }
+
+.index {
+  background-image: url("../images/PIN43502.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+
+
+  .index__novedades {
+    text-align: left;
+    width: 20%;
+    margin-top: 60px;
+
+    .index__novedades--title {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .index__novedades--text {
+    }
+  }
+
+  .index__aux {
+    width: 60%;
+  }
+
+  .index__ofertas {
+    text-align: right;
+    width: 20%;
+    margin-top: 60px;
+
+    .index__ofertas--title {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .index__ofertas--text {
+    }
+  }
+}

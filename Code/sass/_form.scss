@@ -4,6 +4,6 @@ form {
   align-content: center;
 
   input:focus {
-    background: yellow;
+    background: $color-activeNav;
   }
 }

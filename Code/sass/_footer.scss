@@ -1,19 +1,14 @@
 .footer {
   grid-area: 4 / 1 / 5 / 4;
-  border: 1px solid black;
-  background-color: #5c5d67;
-  padding: 20px;
+  background-color: $color-backgrond-titles;
+  margin-top: 5px;
 
   .footer__list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-  
-    .footer__item {
-      margin: 0 10px;
-    }
-  
+    justify-content: space-around;
+
     @each $red, $color in $redes {
       .footer__item--#{$red} {
         color: $color;

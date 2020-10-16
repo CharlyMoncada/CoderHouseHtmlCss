@@ -21,7 +21,7 @@ section {
 
 header {
   grid-area: 1/1/2/4;
-  background-color: #9dd9d2;
+  background-color: white;
   background-image: url("../images/logoPrent.png");
   background-repeat: no-repeat;
   background-size: 25vh;
@@ -40,7 +40,7 @@ nav {
   font-size: x-large;
 }
 nav .active {
-  color: #bf0603;
+  color: #ff8c69;
 }
 nav ul {
   display: flex;
@@ -60,23 +60,19 @@ nav a {
 }
 
 a:hover {
-  color: #bf0603;
+  color: #ff8c69;
 }
 
 .footer {
   grid-area: 4/1/5/4;
-  border: 1px solid black;
-  background-color: #5c5d67;
-  padding: 20px;
+  background-color: #ff8c69;
+  margin-top: 5px;
 }
 .footer .footer__list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-.footer .footer__list .footer__item {
-  margin: 0 10px;
+  justify-content: space-around;
 }
 .footer .footer__list .footer__item--instagram {
   color: #9dd9d2;
@@ -90,26 +86,28 @@ a:hover {
 
 .grid-gallery {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   grid-auto-flow: row dense;
 }
-
-.grid-gallery__item:nth-child(11n+1) {
+.grid-gallery .grid-gallery__link {
+  text-decoration: none;
+}
+.grid-gallery .grid-gallery__link .grid-gallery__text {
+  text-align: center;
+}
+.grid-gallery .grid-gallery__item:nth-child(11n+1) {
   grid-column: span 1;
   grid-row: span 1;
 }
-
-.grid-gallery__item:nth-child(11n+4) {
+.grid-gallery .grid-gallery__item:nth-child(11n+4) {
   grid-column: span 2;
   grid-row: span 1;
 }
-
-.grid-gallery__item:nth-child(11n+7) {
+.grid-gallery .grid-gallery__item:nth-child(11n+7) {
   grid-column: span 1;
   grid-row: span 1;
 }
-
-.grid-gallery__image {
+.grid-gallery .grid-gallery__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -121,5 +119,58 @@ form {
   align-content: center;
 }
 form input:focus {
-  background: yellow;
+  background: #ff8c69;
+}
+
+.index {
+  background-image: url("../images/PIN43502.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 65vh;
+  display: flex;
+}
+.index .index__novedades {
+  text-align: left;
+  width: 20%;
+  margin-top: 60px;
+}
+.index .index__novedades .index__novedades--title {
+  font-size: 25px;
+  padding: 10px;
+}
+.index .index__aux {
+  width: 60%;
+}
+.index .index__ofertas {
+  text-align: right;
+  width: 20%;
+  margin-top: 60px;
+}
+.index .index__ofertas .index__ofertas--title {
+  font-size: 25px;
+  padding: 10px;
+}
+.envios .envios__text {
+  padding: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 20px;
+}
+
+.preguntasFrecuentes .preguntasFrecuentes__tittle {
+  padding: 5px;
+  margin: 20px;
+  font-size: 35px;
+  background-color: #ff8c69;
+}
+.preguntasFrecuentes .preguntasFrecuentes__subtittle {
+  padding: 5px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.preguntasFrecuentes .preguntasFrecuentes__text {
+  padding: 2px;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 20px;
 }
