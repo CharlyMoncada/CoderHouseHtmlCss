@@ -32,63 +32,91 @@
     </nav>
 
     <section>
-      <form action="#" method="POST" enctype="multipart/form-data">
-        <div>
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" required />
+      <div class="contacto">
+        <div class="form">
+          <form action="#" method="POST" enctype="multipart/form-data">
+            <div>
+              <p>Completar formulario de contacto</p>
+            </div>
+            <div class="form__inputBox">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="form__inputBox">
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+            <div class="form__inputBox">
+              <input
+                type="number"
+                name="telefono"
+                placeholder="Número de Contacto"
+                id="telefono"
+              />
+            </div>
+            <div class="form__inputBox">
+              <input
+                type="email"
+                name="nombre"
+                id="email"
+                placeholder="Email de Contacto"
+                required
+              />
+            </div>
+
+            <div>
+              <label>Tipo de Consulta</label>
+              <select name="consulta">
+                <option value="min">Minorista</option>
+                <option value="may">Mayorista</option>
+              </select>
+            </div>
+
+            <div>
+              <textarea
+                name="mensaje"
+                placeholder="Motivo de consulta"
+                cols="70"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="form__buttons">
+              <div class="form__buttons_item">
+                <input type="reset" value="Limpiar Formulario" />
+              </div>
+              <div class="form__buttons_item">
+                <input type="submit" value="Enviar Formulario" />
+              </div>
+            </div>
+          </form>
         </div>
 
-        <div>
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" required />
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="500"
+              height="400"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=buenos%20aires%20primera%20junta%20estacion%20subte&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://fmovies2.org">fmovies</a>
+          </div>
         </div>
-
-        <div>
-          <label for="telefono">Telefono</label>
-          <input type="number" name="telefono" id="telefono" />
-        </div>
-
-        <div>
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="nombre"
-            id="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-
-        <div>
-          <input type="radio" name="sexo" id="masculino" value="masculino" />
-          <label for="masculino">Masculino</label>
-          <input
-            type="radio"
-            name="sexo"
-            id="femenino"
-            value="femenino"
-            checked
-          />
-          <label for="femenino">Femenino</label>
-        </div>
-
-        <div>
-          <label>Tipo de Consulta</label>
-          <select name="consulta">
-            <option value="mi">Minorista</option>
-            <option value="ma">Mayorista</option>
-          </select>
-        </div>
-
-        <div>
-          <label>Mensaje</label>
-        </div>
-        <div>
-          <textarea name="mensaje" cols="20" rows="10"></textarea>
-        </div>
-        <input type="reset" value="Limpiar Formulario" />
-        <input type="submit" value="Enviar Formulario" />
-      </form>
+      </div>
     </section>
 
     <footer class="footer">
@@ -123,7 +151,7 @@
         <li class="footer__list footer__item--whatsapp">
           <a
             class="footer__list__link"
-            href="https://web.whatsapp.com/"
+            href="https://api.whatsapp.com/send?phone=005491151038731"
             target="_blank"
           >
             <img src="./images/icons/whatsapp.ico" />

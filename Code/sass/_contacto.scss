@@ -1,0 +1,37 @@
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 30px;
+
+  .form {
+    grid-area: 1 / 1 / 2 / 2;
+
+    .form__inputBox {
+      input:focus {
+        background: $color-salmon;
+      }
+    }
+    .form__buttons {
+      display: flex;
+
+      .form__buttons_item {
+        padding: 5px;
+      }
+    }
+  }
+
+  .mapouter {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 10px;
+    position: relative;
+    height: 400px;
+    width: 500px;
+
+    .gmap_canvas {
+      overflow: hidden;
+      height: 400px;
+      width: 500px;
+    }
+  }
+}

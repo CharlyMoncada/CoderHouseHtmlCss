@@ -1,43 +1,37 @@
 .index {
-  background-image: url("../images/products/PIN43502.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 65vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 
   .index__novedades {
-    text-align: left;
-    width: 20%;
-    margin-top: 60px;
-
-    .index__novedades--title {
-      font-size: 25px;
-      padding: 10px;
-      font-weight: 300;
-    }
-
-    .index__novedades--text {
-      font-weight: 100;
-    }
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 300;
   }
 
-  .index__aux {
-    width: 60%;
+  .index__image {
+    grid-area: 1 / 2 / 2 / 3;
   }
 
   .index__ofertas {
-    text-align: right;
-    width: 20%;
-    margin-top: 60px;
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 300;
+  }
 
-    .index__ofertas--title {
-      font-size: 25px;
-      padding: 10px;
-      font-weight: 300;
-    }
+  .index__title {
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 300;
+  }
 
-    .index__ofertas--text {
-      font-weight: 100;
-    }
+  .index__text {
+    // background-color: lightgray;
+    background-color: $color-salmon;
+    padding: 5px;
+    font-weight: 100;
+    text-align: center;
   }
 }

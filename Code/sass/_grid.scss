@@ -2,14 +2,14 @@
   display: grid;
   margin-top: 30px;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   .grid-gallery__image {
     border: 1px $color-salmon solid;
     width: 100%;
   }
 
-  .grid-gallery__text{
+  .grid-gallery__text {
     background-color: $color-salmon;
     text-align: center;
   }

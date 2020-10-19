@@ -87,7 +87,7 @@ a:hover {
   display: grid;
   margin-top: 30px;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .grid-gallery .grid-gallery__image {
   border: 1px #fbc3af solid;
@@ -98,50 +98,67 @@ a:hover {
   text-align: center;
 }
 
-form {
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   margin-left: 30px;
-  grid-area: 3/1/4/2;
-  align-content: center;
 }
-form input:focus {
+.contacto .form {
+  grid-area: 1/1/2/2;
+}
+.contacto .form .form__inputBox input:focus {
   background: #fbc3af;
+}
+.contacto .form .form__buttons {
+  display: flex;
+}
+.contacto .form .form__buttons .form__buttons_item {
+  padding: 5px;
+}
+.contacto .mapouter {
+  grid-area: 1/2/2/3;
+  padding: 10px;
+  position: relative;
+  height: 400px;
+  width: 500px;
+}
+.contacto .mapouter .gmap_canvas {
+  overflow: hidden;
+  height: 400px;
+  width: 500px;
 }
 
 .index {
-  background-image: url("../images/products/PIN43502.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 65vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 .index .index__novedades {
-  text-align: left;
-  width: 20%;
-  margin-top: 60px;
-}
-.index .index__novedades .index__novedades--title {
-  font-size: 25px;
-  padding: 10px;
+  grid-area: 1/1/2/2;
+  text-align: center;
+  margin-top: 40px;
   font-weight: 300;
 }
-.index .index__novedades .index__novedades--text {
-  font-weight: 100;
-}
-.index .index__aux {
-  width: 60%;
+.index .index__image {
+  grid-area: 1/2/2/3;
 }
 .index .index__ofertas {
-  text-align: right;
-  width: 20%;
-  margin-top: 60px;
+  grid-area: 1/3/2/4;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 300;
 }
-.index .index__ofertas .index__ofertas--title {
+.index .index__title {
   font-size: 25px;
   padding: 10px;
   font-weight: 300;
 }
-.index .index__ofertas .index__ofertas--text {
+.index .index__text {
+  background-color: #fbc3af;
+  padding: 5px;
   font-weight: 100;
+  text-align: center;
 }
 
 .envios .envios__text {
