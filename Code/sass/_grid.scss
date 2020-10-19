@@ -1,34 +1,16 @@
 .grid-gallery {
   display: grid;
-  grid-gap: 2rem;
-  grid-auto-flow: row dense;
-
-  .grid-gallery__link {
-    text-decoration: none;
-
-    .grid-gallery__text {
-      text-align: center;
-    }
-  }
-
-  .grid-gallery__item:nth-child(11n + 1) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .grid-gallery__item:nth-child(11n + 4) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  .grid-gallery__item:nth-child(11n + 7) {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+  margin-top: 30px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   .grid-gallery__image {
+    border: 1px $color-salmon solid;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+  }
+
+  .grid-gallery__text{
+    background-color: $color-salmon;
+    text-align: center;
   }
 }
