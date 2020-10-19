@@ -1,6 +1,6 @@
 .footer {
   grid-area: 4 / 1 / 5 / 4;
-  background-color: $color-backgrond-titles;
+  // background-color: $color-salmon;
   margin-top: 5px;
 
   .footer__list {
@@ -8,11 +8,5 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
-    @each $red, $color in $redes {
-      .footer__item--#{$red} {
-        color: $color;
-      }
-    }
   }
 }

@@ -1,24 +1,9 @@
-// .index {
-//   grid-area: 3 / 1 / 4 / 2;
-//   display: flex;
-//   padding: 30px;
-//   margin: 20px;
-//   flex-direction: row;
-//   width: 100%;
-
-//   .indexImage {
-//     display: flex;
-//     align-content: center;
-//   }
-// }
-
 .index {
-  background-image: url("../images/PIN43502.jpg");
+  background-image: url("../images/products/PIN43502.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 65vh;
   display: flex;
-
 
   .index__novedades {
     text-align: left;
@@ -28,9 +13,11 @@
     .index__novedades--title {
       font-size: 25px;
       padding: 10px;
+      font-weight: 300;
     }
 
     .index__novedades--text {
+      font-weight: 100;
     }
   }
 
@@ -46,9 +33,11 @@
     .index__ofertas--title {
       font-size: 25px;
       padding: 10px;
+      font-weight: 300;
     }
 
     .index__ofertas--text {
+      font-weight: 100;
     }
   }
 }

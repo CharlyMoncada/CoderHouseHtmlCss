@@ -2,21 +2,22 @@
   .preguntasFrecuentes__tittle {
     padding: 5px;
     margin: 20px;
-    font-size: 35px;
-    background-color: $color-backgrond-titles;
+    font-size: 30px;
+    background-color: $color-salmon;
+    font-weight: 600;
   }
 
-  .preguntasFrecuentes__subtittle{
-      padding: 5px;
-      margin-left: 30px;
-      font-size: 25px;
-      
+  .preguntasFrecuentes__subtittle {
+    padding: 5px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 300;
   }
 
-  .preguntasFrecuentes__text{
-      padding: 2px;
-      margin-left: 60px;
-      margin-right: 60px;
-      font-size: 20px;
+  .preguntasFrecuentes__text {
+    padding: 2px;
+    margin: 10px 60px 30px;
+    font-size: 20px;
+    font-weight: 100;
   }
 }

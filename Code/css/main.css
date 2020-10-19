@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,100;1,300;1,600;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Piazzolla", serif;
 }
 
 div {
@@ -37,10 +39,10 @@ nav {
   justify-content: space-around;
   margin: 0px 20px 20px 20px;
   padding: 10px;
-  font-size: x-large;
+  font-size: 30px;
 }
 nav .active {
-  color: #ff8c69;
+  color: #fbc3af;
 }
 nav ul {
   display: flex;
@@ -53,6 +55,7 @@ nav ul li {
 }
 nav a {
   color: black;
+  font-weight: 900;
   text-align: center;
   text-decoration: none;
   float: left;
@@ -60,12 +63,11 @@ nav a {
 }
 
 a:hover {
-  color: #ff8c69;
+  color: #fbc3af;
 }
 
 .footer {
   grid-area: 4/1/5/4;
-  background-color: #ff8c69;
   margin-top: 5px;
 }
 .footer .footer__list {
@@ -73,15 +75,6 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-}
-.footer .footer__list .footer__item--instagram {
-  color: #9dd9d2;
-}
-.footer .footer__list .footer__item--facebook {
-  color: #bf0603;
-}
-.footer .footer__list .footer__item--email {
-  color: #9dd9d2;
 }
 
 .grid-gallery {
@@ -119,11 +112,11 @@ form {
   align-content: center;
 }
 form input:focus {
-  background: #ff8c69;
+  background: #fbc3af;
 }
 
 .index {
-  background-image: url("../images/PIN43502.jpg");
+  background-image: url("../images/products/PIN43502.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 65vh;
@@ -137,6 +130,10 @@ form input:focus {
 .index .index__novedades .index__novedades--title {
   font-size: 25px;
   padding: 10px;
+  font-weight: 300;
+}
+.index .index__novedades .index__novedades--text {
+  font-weight: 100;
 }
 .index .index__aux {
   width: 60%;
@@ -149,28 +146,36 @@ form input:focus {
 .index .index__ofertas .index__ofertas--title {
   font-size: 25px;
   padding: 10px;
+  font-weight: 300;
 }
+.index .index__ofertas .index__ofertas--text {
+  font-weight: 100;
+}
+
 .envios .envios__text {
   padding: 20px;
   margin-left: 60px;
   margin-right: 60px;
   font-size: 20px;
+  font-weight: 100;
 }
 
 .preguntasFrecuentes .preguntasFrecuentes__tittle {
   padding: 5px;
   margin: 20px;
-  font-size: 35px;
-  background-color: #ff8c69;
+  font-size: 30px;
+  background-color: #fbc3af;
+  font-weight: 600;
 }
 .preguntasFrecuentes .preguntasFrecuentes__subtittle {
   padding: 5px;
   margin-left: 30px;
   font-size: 25px;
+  font-weight: 300;
 }
 .preguntasFrecuentes .preguntasFrecuentes__text {
   padding: 2px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 10px 60px 30px;
   font-size: 20px;
+  font-weight: 100;
 }
