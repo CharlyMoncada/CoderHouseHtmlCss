@@ -11,7 +11,9 @@
   }
 
   .index__image {
+    padding: 0px;
     grid-area: 1 / 2 / 2 / 3;
+    border: 1px $color-salmon solid;
   }
 
   .index__ofertas {
