@@ -5,8 +5,8 @@ header {
   background-repeat: no-repeat;
   background-size: 25vh;
   background-position: center top;
-}
 
-.logo {
-  grid-area: 3 / 2 / 4 / 4;
+  @media screen and (max-width: 767px) {
+    grid-area: 1 / 2 / 3 / 4;
+  }
 }

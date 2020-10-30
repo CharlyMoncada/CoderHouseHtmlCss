@@ -3,14 +3,20 @@
   margin-top: 30px;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 100%;
 
   .grid-gallery__image {
     border: 1px $color-salmon solid;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   .grid-gallery__text {
     background-color: $color-salmon;
     text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: auto;
   }
 }
