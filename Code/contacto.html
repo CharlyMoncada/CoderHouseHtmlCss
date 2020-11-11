@@ -9,6 +9,9 @@
       content="Contacto Page de Prent Lenceria con todas las formas de contacto"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script defer src="javascript/person.js"></script>
+    <script defer src="javascript/contact.js"></script>
+    <script defer src="javascript/sender.js"></script>
   </head>
   <body>
     <header></header>
@@ -78,8 +81,8 @@
             <div>
               <label>Tipo de Consulta</label>
               <select name="consulta">
-                <option value="min">Minorista</option>
-                <option value="may">Mayorista</option>
+                <option value="minorista">Minorista</option>
+                <option value="mayorista">Mayorista</option>
               </select>
             </div>
 
@@ -96,7 +99,11 @@
                 <input type="reset" value="Limpiar Formulario" />
               </div>
               <div class="form__buttons_item">
-                <input type="submit" value="Enviar Formulario" />
+                <input
+                  type="submit"
+                  value="Enviar Formulario"
+                  onclick="sendEmail()"
+                />
               </div>
             </div>
           </form>
