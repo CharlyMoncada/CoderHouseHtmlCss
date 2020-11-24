@@ -149,9 +149,6 @@ header {
 .contacto .form {
   grid-area: 1/1/2/2;
 }
-.contacto .form .form__inputBox input:focus {
-  background: #fbc3af;
-}
 .contacto .form .form__buttons {
   display: flex;
 }

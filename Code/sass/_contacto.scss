@@ -7,11 +7,6 @@
   .form {
     grid-area: 1 / 1 / 2 / 2;
 
-    .form__inputBox {
-      input:focus {
-        background: $color-salmon;
-      }
-    }
     .form__buttons {
       display: flex;
 
