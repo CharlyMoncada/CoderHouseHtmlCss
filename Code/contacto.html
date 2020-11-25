@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="javascript/person.js"></script>
     <script defer src="javascript/contact.js"></script>
-    <script defer src="javascript/sender.js"></script>
     <script defer src="javascript/form.js"></script>
+    <script defer src="javascript/sender.js"></script>
+    <script defer src="javascript/storage.js"></script>
+    <script defer src="javascript/provincias.js"></script>
   </head>
   <body>
     <header></header>
@@ -50,6 +52,7 @@
                 id="nombre"
                 placeholder="Nombre"
                 required
+                onblur="saveField(this)"
               />
             </div>
             <div class="form__inputBox">
@@ -59,6 +62,7 @@
                 id="apellido"
                 placeholder="Apellido"
                 required
+                onblur="saveField(this)"
               />
             </div>
             <div class="form__inputBox">
@@ -67,6 +71,7 @@
                 name="telefono"
                 placeholder="Número de Contacto"
                 id="telefono"
+                onblur="saveField(this)"
               />
             </div>
             <div class="form__inputBox">
@@ -76,7 +81,13 @@
                 id="email"
                 placeholder="Email de Contacto"
                 required
+                onblur="saveField(this)"
               />
+            </div>
+
+            <div>
+              <label>Provincia</label>
+              <select id="provincias" class="browser-default"></select>
             </div>
 
             <div>
