@@ -1,0 +1,68 @@
+[
+    {
+        "id": "1",
+        "nombre": "MK 5223",
+        "marca": "MK",
+        "rutaImagen": "./images/products/1_MK5223_web.jpg"
+    },
+    {
+        "id": "2",
+        "nombre": "MK 5223",
+        "marca": "MK",
+        "rutaImagen": "./images/products/2_MK5223_web.jpg"
+    },
+    {
+        "id": "3",
+        "nombre": "MK 5275",
+        "marca": "MK",
+        "rutaImagen": "./images/products/3_MK5275_web.jpg"
+    },
+    {
+        "id": "4",
+        "nombre": "MK 5323",
+        "marca": "MK",
+        "rutaImagen": "./images/products/4_MK5323_web.jpg"
+    },
+    {
+        "id": "5",
+        "nombre": "MK 5502",
+        "marca": "MK",
+        "rutaImagen": "./images/products/5_MK5502_web.jpg"
+    },
+    {
+        "id": "6",
+        "nombre": "MK 5502",
+        "marca": "MK",
+        "rutaImagen": "./images/products/6_MK5502_web.jpg"
+    },
+    {
+        "id": "7",
+        "nombre": "MK 5553",
+        "marca": "MK",
+        "rutaImagen": "./images/products/7_MK5553_web.jpg"
+    },
+    {
+        "id": "8",
+        "nombre": "MK 5553",
+        "marca": "MK",
+        "rutaImagen": "./images/products/8_MK5553_web.jpg"
+    },
+    {
+        "id": "9",
+        "nombre": "PIN 12003",
+        "marca": "MK",
+        "rutaImagen": "./images/products/1_PIN12003_web.jpg"
+    },
+    {
+        "id": "10",
+        "nombre": "PIN 12003",
+        "marca": "MK",
+        "rutaImagen": "./images/products/2_PIN12003_web.jpg"
+    },
+    {
+        "id": "11",
+        "nombre": "PIN 51204",
+        "marca": "MK",
+        "rutaImagen": "./images/products/4_PIN51204_web.jpg"
+    }
+]
