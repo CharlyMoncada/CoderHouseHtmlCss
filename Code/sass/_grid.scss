@@ -13,10 +13,20 @@
 
   .grid-gallery__text {
     background-color: $color-salmon;
+    border: 1px solid black;
     text-align: center;
+    position: absolute;
   }
 
+  
   @media screen and (max-width: 767px) {
     width: auto;
   }
+}
+
+.grid-gallery__star{
+  display: block;
+  position: relative;
+  top: -45px;
+  left: 5px;
 }
