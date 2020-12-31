@@ -9,6 +9,8 @@
       content="Envios Page de Prent Lenceria con toda la informacion requerida para los envios"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="javascript/JQuery-3.5.1.min.js"></script>
+    <script defer src="javascript/footer.js"></script>
   </head>
   <body>
     <header></header>
@@ -44,8 +46,8 @@
         <p class="envios__text">
           Siempre pensando en nuestros clientes, para que ya no deban
           preocuparse más por descuidar su local o complicarse con los horarios
-          para retirar la mercadería, hemos incorporado incorporado el sistema de envíos a
-          domicilio sin cargo para todo capital federal.
+          para retirar la mercadería, hemos incorporado incorporado el sistema
+          de envíos a domicilio sin cargo para todo capital federal.
         </p>
         <p class="envios__text">
           En caso de optar por envíos, consultar zonas de entrega.
@@ -66,50 +68,9 @@
         </p>
       </div>
     </section>
+
     <footer class="footer">
-      <ul class="footer__list">
-        <li class="footer__list footer__item--instagram">
-          <a
-            class="footer__list__link"
-            href="https://www.instagram.com"
-            target="_blank"
-          >
-            <img src="./images/icons/instagram.ico" />
-          </a>
-        </li>
-        <li class="footer__list footer__item--facebook">
-          <a
-            class="footer__list__link"
-            href="https://www.facebook.com"
-            target="_blank"
-          >
-            <img src="./images/icons/facebook.ico" />
-          </a>
-        </li>
-        <li class="footer__list footer__item--twitter">
-          <a
-            class="footer__list__link"
-            href="https://twitter.com/?lang=es"
-            target="_blank"
-          >
-            <img src="./images/icons/twitter.ico" />
-          </a>
-        </li>
-        <li class="footer__list footer__item--whatsapp">
-          <a
-            class="footer__list__link"
-            href="https://api.whatsapp.com/send?phone=005491151038731"
-            target="_blank"
-          >
-            <img src="./images/icons/whatsapp.ico" />
-          </a>
-        </li>
-        <li class="footer__list footer__item--email">
-          <a class="footer__list__link" href="mailto:lenceriaprentt@gmail.com">
-            <img src="./images/icons/email.ico"
-          /></a>
-        </li>
-      </ul>
+      <ul class="footer__list" id="footer__list"></ul>
     </footer>
   </body>
 </html>
