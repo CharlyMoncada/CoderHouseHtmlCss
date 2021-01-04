@@ -8,7 +8,6 @@ function cargoRedesSocialesStreaming() {
     success: function (response) {
         contenido = response;
       $.each(contenido, function (i) {
-          debugger
         html += `<li class="footer__list footer__item--${contenido[i].redSocial}">
                         <a
                             id="${contenido[i].id}"

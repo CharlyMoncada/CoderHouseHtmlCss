@@ -11,29 +11,19 @@ function cargoCatalogoStreaming() {
       $.each(contenidoJSON, function (i) {
         let id = parseInt(contenidoJSON[i].id);
         let isFavorite = favoritos.includes(id);
-        if(!isFavorite){
-          HTMLCard += `<div class="grid-gallery__item">
-                          <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre}</p>
-                          <img
-                              id="${id}"
-                              class="grid-gallery__image"
-                              src="${contenidoJSON[i].rutaImagen}"
-                              alt="Modelo ${contenidoJSON[i].nombre}"
-                          />
-                          <input type="image" class="grid-gallery__star" src="./images/icons/star.ico" onclick="agregarFavorito(${contenidoJSON[i].id});" />
-                      </div>`;
-        }
-        else{
-          HTMLCard += `<div class="grid-gallery__item">
-                          <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre}</p>
-                          <img
+
+        HTMLCard += `<div class="grid-gallery__item">
+                        <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre}</p>
+                        <img
                             id="${id}"
                             class="grid-gallery__image"
-                            src="${contenidoJSON[i].rutaImagen}"    
+                            src="${contenidoJSON[i].rutaImagen}"
                             alt="Modelo ${contenidoJSON[i].nombre}"
-                          />
-                      </div>`;
+                        />`;
+        if (!isFavorite) {
+          HTMLCard += `<input type="image" class="grid-gallery__star" src="./images/icons/star.ico" onclick="agregarFavorito(${contenidoJSON[i].id});" />`;
         }
+        HTMLCard += `</div>`;
       });
       $("#gallery").html(HTMLCard);
     },
@@ -49,17 +39,16 @@ function cargoCatalogoStreaming() {
 
 function agregarFavorito(id) {
   let existe = false;
-  //cargarFavoritos();
   for (let i in favoritos) {
     if (favoritos[i] == id) {
       favoritos.pop(id);
-      alert("Eliminado de favoritos")
+      alert("Eliminado de favoritos");
       existe = true;
       break;
     }
   }
   if (existe == false) {
-    alert("Agregado a favoritos")
+    alert("Agregado a favoritos");
     favoritos.push(id);
   }
 
@@ -74,6 +63,7 @@ function agregarFavorito(id) {
 
 function cargarFavoritos() {
   if (localStorage.length > 0) {
+    debugger
     favoritos = JSON.parse(localStorage.getItem("favoritos"));
   } else {
     localStorage.setItem("favoritos", JSON.stringify(favoritos));
@@ -81,6 +71,6 @@ function cargarFavoritos() {
 }
 
 setTimeout(() => {
-  cargarFavoritos()
-  cargoCatalogoStreaming()
+  cargarFavoritos();
+  cargoCatalogoStreaming();
 });
