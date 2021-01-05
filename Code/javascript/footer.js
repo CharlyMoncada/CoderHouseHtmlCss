@@ -3,7 +3,7 @@ let contenido = [];
 
 function cargoRedesSocialesStreaming() {
   $.ajax({
-    url: "javascript/json/footer.json",
+    url: "./javascript/json/footer.json",
     dataType: "json",
     success: function (response) {
         contenido = response;

@@ -3,66 +3,77 @@
         "id": "1",
         "nombre": "MK 5223",
         "marca": "MK",
-        "rutaImagen": "./images/products/1_MK5223_web.jpg"
+        "rutaImagen": "./images/products/1_MK5223_web.jpg",
+        "precio": "1200"
     },
     {
         "id": "2",
         "nombre": "MK 5223",
         "marca": "MK",
-        "rutaImagen": "./images/products/2_MK5223_web.jpg"
+        "rutaImagen": "./images/products/2_MK5223_web.jpg",
+        "precio": "1000"
     },
     {
         "id": "3",
         "nombre": "MK 5275",
         "marca": "MK",
-        "rutaImagen": "./images/products/3_MK5275_web.jpg"
+        "rutaImagen": "./images/products/3_MK5275_web.jpg",
+        "precio": "1100"
     },
     {
         "id": "4",
         "nombre": "MK 5323",
         "marca": "MK",
-        "rutaImagen": "./images/products/4_MK5323_web.jpg"
+        "rutaImagen": "./images/products/4_MK5323_web.jpg",
+        "precio": "1350"
     },
     {
         "id": "5",
         "nombre": "MK 5502",
         "marca": "MK",
-        "rutaImagen": "./images/products/5_MK5502_web.jpg"
+        "rutaImagen": "./images/products/5_MK5502_web.jpg",
+        "precio": "1420"
     },
     {
         "id": "6",
         "nombre": "MK 5502",
         "marca": "MK",
-        "rutaImagen": "./images/products/6_MK5502_web.jpg"
+        "rutaImagen": "./images/products/6_MK5502_web.jpg",
+        "precio": "1050"
     },
     {
         "id": "7",
         "nombre": "MK 5553",
         "marca": "MK",
-        "rutaImagen": "./images/products/7_MK5553_web.jpg"
+        "rutaImagen": "./images/products/7_MK5553_web.jpg",
+        "precio": "1030"
     },
     {
         "id": "8",
         "nombre": "MK 5553",
         "marca": "MK",
-        "rutaImagen": "./images/products/8_MK5553_web.jpg"
+        "rutaImagen": "./images/products/8_MK5553_web.jpg",
+        "precio": "1680"
     },
     {
         "id": "9",
         "nombre": "PIN 12003",
         "marca": "MK",
-        "rutaImagen": "./images/products/1_PIN12003_web.jpg"
+        "rutaImagen": "./images/products/1_PIN12003_web.jpg",
+        "precio": "2000"
     },
     {
         "id": "10",
         "nombre": "PIN 12003",
         "marca": "MK",
-        "rutaImagen": "./images/products/2_PIN12003_web.jpg"
+        "rutaImagen": "./images/products/2_PIN12003_web.jpg",
+        "precio": "3000"
     },
     {
         "id": "11",
         "nombre": "PIN 51204",
         "marca": "MK",
-        "rutaImagen": "./images/products/4_PIN51204_web.jpg"
+        "rutaImagen": "./images/products/4_PIN51204_web.jpg",
+        "precio": "2500"
     }
 ]

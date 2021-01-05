@@ -3,7 +3,7 @@ let contenidoJSON = [];
 
 function cargoProvinciasStreaming() {
   $.ajax({
-    url: "javascript/json/provincias.json",
+    url: "./javascript/json/provincias.json",
     dataType: "json",
     success: function (response) {
       contenidoJSON = response;

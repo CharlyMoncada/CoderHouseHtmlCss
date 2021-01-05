@@ -4,27 +4,43 @@ var favoritos = [];
 
 function cargoCatalogoStreaming() {
   $.ajax({
-    url: "javascript/json/catalogo.json",
+    url: "./javascript/json/catalogo.json",
     dataType: "json",
     success: function (response) {
       contenidoJSON = response;
       $.each(contenidoJSON, function (i) {
         let id = parseInt(contenidoJSON[i].id);
-        let isFavorite = favoritos.includes(id);
 
-        HTMLCard += `<div class="grid-gallery__item">
-                        <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre}</p>
-                        <img
+        if (favoritos.length == 0) {
+          HTMLCard += `<div class="grid-gallery__item">
+                          <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre}</p>
+                          <img
                             id="${id}"
                             class="grid-gallery__image"
                             src="${contenidoJSON[i].rutaImagen}"
                             alt="Modelo ${contenidoJSON[i].nombre}"
+                          />`;
+          HTMLCard += `<input type="image" class="grid-gallery__star" src="./images/icons/add_shopping_cart.ico" onclick="agregarAlCarritoDeCompras(${contenidoJSON[i].id});" />`;
+          HTMLCard += `</div>`;
+        } else if (favoritos.length > 0) {
+          let isFavorite = favoritos.includes(id);
+          HTMLCard += `<div class="grid-gallery__item">
+                        <p class="grid-gallery__text">Modelo ${contenidoJSON[i].nombre} - Precio: ${contenidoJSON[i].precio}</p>
+                        <img
+                          id="${id}"
+                          class="grid-gallery__image"
+                          src="${contenidoJSON[i].rutaImagen}"
+                          alt="Modelo ${contenidoJSON[i].nombre}"
                         />`;
-        if (!isFavorite) {
-          HTMLCard += `<input type="image" class="grid-gallery__star" src="./images/icons/star.ico" onclick="agregarFavorito(${contenidoJSON[i].id});" />`;
+
+          if (!isFavorite) {
+            HTMLCard += `<input type="image" class="grid-gallery__star" src="./images/icons/add_shopping_cart.ico" onclick="agregarAlCarritoDeCompras(${contenidoJSON[i].id});" />`;
+          }
+
+          HTMLCard += `</div>`;
         }
-        HTMLCard += `</div>`;
       });
+
       $("#gallery").html(HTMLCard);
     },
     error: function () {
@@ -37,37 +53,20 @@ function cargoCatalogoStreaming() {
   });
 }
 
-function agregarFavorito(id) {
-  let existe = false;
-  for (let i in favoritos) {
-    if (favoritos[i] == id) {
-      favoritos.pop(id);
-      alert("Eliminado de favoritos");
-      existe = true;
-      break;
-    }
-  }
-  if (existe == false) {
-    alert("Agregado a favoritos");
-    favoritos.push(id);
-  }
-
-  if (favoritos.length > 0) {
-    localStorage.setItem("favoritos", JSON.stringify(favoritos));
-  } else {
-    localStorage.removeItem("favoritos");
-  }
+function agregarAlCarritoDeCompras(id) {
+  alert("Agregado al carrito de compras (Solo un producto)");
+  favoritos.push(id);
+  localStorage.setItem("favoritos", JSON.stringify(favoritos));
 
   location.reload();
 }
 
 function cargarFavoritos() {
-  if (localStorage.length > 0) {
-    debugger
+  if (localStorage.length > 0 && localStorage.getItem("favoritos") != null) {
     favoritos = JSON.parse(localStorage.getItem("favoritos"));
-  } else {
-    localStorage.setItem("favoritos", JSON.stringify(favoritos));
   }
+
+  localStorage.setItem("favoritos", JSON.stringify(favoritos));
 }
 
 setTimeout(() => {

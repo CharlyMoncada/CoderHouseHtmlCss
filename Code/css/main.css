@@ -147,6 +147,18 @@ header {
   position: relative;
   top: -45px;
   left: 5px;
+  border: 1px black solid;
+  background-color: #fbc3af;
+}
+
+.contador-productos {
+  padding: 5px;
+  margin: 20px;
+  font-size: 30px;
+  border: 1px black solid;
+  background-color: #fbc3af;
+  font-weight: 300;
+  text-align: center;
 }
 
 .contacto {

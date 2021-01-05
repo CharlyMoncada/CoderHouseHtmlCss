@@ -29,4 +29,16 @@
   position: relative;
   top: -45px;
   left: 5px;
+  border: 1px black solid;
+  background-color: $color-salmon;
+}
+
+.contador-productos{
+  padding: 5px;
+  margin: 20px;
+  font-size: 30px;
+  border: 1px  black solid;
+  background-color: $color-salmon;
+  font-weight: 300;
+  text-align: center;
 }
